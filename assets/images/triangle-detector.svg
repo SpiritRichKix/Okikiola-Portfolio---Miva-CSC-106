@@ -1,0 +1,44 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="title desc">
+  <title id="title">Right-angled triangle detector</title>
+  <desc id="desc">A geometric right-angled triangle with labelled sides and a ninety-degree angle.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8efff"></stop>
+      <stop offset="1" stop-color="#d9f4f1"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" rx="28" fill="url(#background)"></rect>
+
+  <circle cx="400" cy="235" r="180" fill="#ffffff" opacity=".35"></circle>
+
+  <!-- Triangle -->
+  <path d="M210 355 L210 105 L550 355 Z" fill="#315bea" fill-opacity=".12" stroke="#315bea" stroke-width="9" stroke-linejoin="round"></path>
+
+  <!-- Right angle marker -->
+  <path d="M210 315 H250 V355" fill="none" stroke="#13a6a6" stroke-width="7" stroke-linejoin="round"></path>
+
+  <!-- Angle label -->
+  <rect x="265" y="265" width="125" height="48" rx="12" fill="#152238"></rect>
+  <text x="327" y="296" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold" fill="#ffffff">90°</text>
+
+  <!-- Side labels -->
+  <g font-family="Arial" font-weight="bold" font-size="22" fill="#152238">
+    <text x="175" y="235" text-anchor="end">A</text>
+    <text x="380" y="390" text-anchor="middle">B</text>
+    <text x="410" y="215" text-anchor="middle">C</text>
+  </g>
+
+  <!-- Result panel -->
+  <rect x="570" y="125" width="170" height="220" rx="20" fill="#ffffff"></rect>
+  <circle cx="655" cy="180" r="28" fill="#d9f4f1"></circle>
+  <path d="M641 180 L651 190 L671 168" fill="none" stroke="#13a6a6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path>
+
+  <text x="655" y="238" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#152238">RESULT</text>
+
+  <text x="655" y="270" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#315bea">RIGHT-ANGLED</text>
+
+  <text x="655" y="298" text-anchor="middle" font-family="Arial" font-size="14" fill="#65748b">Triangle detected</text>
+</svg>

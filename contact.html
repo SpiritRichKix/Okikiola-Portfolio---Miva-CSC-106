@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Okikiola Olanrewaju.">
+  <title>Contact | Okikiola Olanrewaju</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/contact.js"></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">OKI<span>.</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="planner.html">Planner</a>
+      <a class="active" href="contact.html">Contact</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle colour theme">◐</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero container">
+    <p class="eyebrow">START A CONVERSATION</p>
+    <h1>Let's make something <span class="gradient-text">meaningful.</span></h1>
+
+    <p class="lead">
+      For academic, technology or collaboration enquiries,
+      you're welcome to reach out.
+    </p>
+  </section>
+
+  <section class="section container contact-layout">
+
+    <div>
+      <p class="eyebrow">CONTACT DETAILS</p>
+      <h2>Find me here.</h2>
+
+      <div class="contact-item">
+        <span class="contact-icon">✉</span>
+        <div>
+          <small>Personal email</small>
+          <a href="mailto:okikiolaolanrewaju659@gmail.com">
+            okikiolaolanrewaju659@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <span class="contact-icon">▤</span>
+        <div>
+          <small>Academic email</small>
+          <a href="mailto:o.olanrewaju9457@miva.edu.ng">
+            o.olanrewaju9457@miva.edu.ng
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <span class="contact-icon">↗</span>
+        <div>
+          <small>Other platforms</small>
+          <span>Social links will be added later.</span>
+        </div>
+      </div>
+
+      <div class="note-box">
+        <strong>Form demonstration</strong>
+        <p>
+          This form validates your entries in the browser.
+          It does not send or store messages on a server.
+        </p>
+      </div>
+    </div>
+
+    <form id="contact-form" class="contact-form" novalidate>
+
+      <div class="field">
+        <label for="name">Name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          autocomplete="name"
+          required
+        >
+        <small class="field-error" id="name-error"></small>
+      </div>
+
+      <div class="field">
+        <label for="email">Email address</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+        >
+        <small class="field-error" id="email-error"></small>
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone number</label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          autocomplete="tel"
+          required
+        >
+        <small class="field-error" id="phone-error"></small>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          required
+        ></textarea>
+        <small class="field-error" id="message-error"></small>
+      </div>
+
+      <button class="button primary" type="submit">
+        Validate message ↗
+      </button>
+
+      <p id="form-feedback" class="feedback" role="status" aria-live="polite"></p>
+
+    </form>
+
+  </section>
+
+  <section class="section container media-section">
+    <div>
+      <p class="eyebrow">MULTIMEDIA</p>
+      <h2>A moment of sound.</h2>
+      <p class="muted">
+        An original short electronic tone included as an
+        HTML audio demonstration.
+      </p>
+    </div>
+
+    <audio controls preload="none">
+      <source src="assets/audio/portfolio-intro-tone.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a class="brand" href="index.html">OKI<span>.</span></a>
+    <p>Built with curiosity, purpose and plain HTML, CSS & JavaScript.</p>
+    <span>© <span data-year></span> Okikiola Olanrewaju</span>
+  </div>
+</footer>
+
+</body>
+</html>

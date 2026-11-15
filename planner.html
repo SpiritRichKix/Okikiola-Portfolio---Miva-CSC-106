@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An interactive academic task planner.">
+  <title>Academic Planner | Okikiola Olanrewaju</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/planner.js"></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">OKI<span>.</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a class="active" href="planner.html">Planner</a>
+      <a href="contact.html">Contact</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle colour theme">◐</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero container">
+    <p class="eyebrow">STAY INTENTIONAL</p>
+    <h1>Your academic work,<br><span class="gradient-text">in clear view.</span></h1>
+
+    <p class="lead">
+      A simple task manager for keeping track of assignments,
+      revision and project deadlines. Your tasks are saved
+      in this browser.
+    </p>
+  </section>
+
+  <section class="section container">
+
+    <div class="planner-shell">
+
+      <div class="planner-top">
+        <div>
+          <p class="eyebrow">MY TASKS</p>
+          <h2>Academic planner</h2>
+        </div>
+
+        <span class="storage-label">
+          <span class="status-dot"></span>
+          Saved on this device
+        </span>
+      </div>
+
+      <div class="stats-grid">
+
+        <div class="stat-card">
+          <strong id="total-count">0</strong>
+          <span>Total tasks</span>
+        </div>
+
+        <div class="stat-card">
+          <strong id="pending-count">0</strong>
+          <span>Pending</span>
+        </div>
+
+        <div class="stat-card">
+          <strong id="completed-count">0</strong>
+          <span>Completed</span>
+        </div>
+
+      </div>
+
+      <form id="task-form" class="task-form">
+
+        <div class="field grow">
+          <label for="task-title">Task description</label>
+          <input
+            id="task-title"
+            name="task"
+            type="text"
+            maxlength="120"
+            placeholder="e.g. Review COS 106 notes"
+            required
+          >
+        </div>
+
+        <div class="field">
+          <label for="task-date">
+            Due date <span class="optional">(optional)</span>
+          </label>
+          <input id="task-date" name="dueDate" type="date">
+        </div>
+
+        <button class="button primary" type="submit">
+          Add task +
+        </button>
+
+      </form>
+
+      <p id="planner-feedback" class="feedback" role="status" aria-live="polite"></p>
+
+      <div class="task-toolbar">
+        <h3>Task list</h3>
+
+        <label for="task-filter">
+          Show
+          <select id="task-filter">
+            <option value="all">All tasks</option>
+            <option value="pending">Pending</option>
+            <option value="completed">Completed</option>
+          </select>
+        </label>
+      </div>
+
+      <ul id="task-list" class="task-list" aria-live="polite"></ul>
+
+      <div id="empty-state" class="empty-state">
+        <span>✳</span>
+        <h3>No tasks here yet</h3>
+        <p>Add your first academic task above to get started.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a class="brand" href="index.html">OKI<span>.</span></a>
+    <p>Built with curiosity, purpose and plain HTML, CSS & JavaScript.</p>
+    <span>© <span data-year></span> Okikiola Olanrewaju</span>
+  </div>
+</footer>
+
+</body>
+</html>

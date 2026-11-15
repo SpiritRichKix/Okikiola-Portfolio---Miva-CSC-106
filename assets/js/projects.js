@@ -1,0 +1,24 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-button');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const selectedCategory = button.dataset.filter;
+
+            filterButtons.forEach((item) => {
+                item.classList.remove('active');
+            });
+
+            button.classList.add('active');
+
+            projectCards.forEach((card) => {
+                const category = card.dataset.category;
+
+                card.hidden =
+                    selectedCategory !== 'all' &&
+                    category !== selectedCategory;
+            });
+        });
+    });
+});

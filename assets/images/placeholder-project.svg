@@ -1,0 +1,55 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-labelledby="title desc">
+  <title id="title">Future project placeholder</title>
+  <desc id="desc">An abstract illustration representing ideas, technology and future projects.</desc>
+
+  <defs>
+    <linearGradient id="future-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172d59"></stop>
+      <stop offset="1" stop-color="#315bea"></stop>
+    </linearGradient>
+    <linearGradient id="future-shape" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#55d3cf"></stop>
+      <stop offset="1" stop-color="#86a2ff"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" rx="28" fill="url(#future-bg)"></rect>
+
+  <!-- Decorative circles -->
+  <circle cx="400" cy="225" r="155" fill="#ffffff" opacity=".05"></circle>
+  <circle cx="400" cy="225" r="115" fill="none" stroke="#ffffff" stroke-opacity=".2" stroke-width="2"></circle>
+  <circle cx="400" cy="225" r="80" fill="none" stroke="#ffffff" stroke-opacity=".2" stroke-width="2"></circle>
+
+  <!-- Central idea symbol -->
+  <path d="M400 112
+           C345 112 305 153 305 207
+           C305 244 327 269 348 291
+           C363 307 370 320 372 341
+           H428
+           C430 320 437 307 452 291
+           C473 269 495 244 495 207
+           C495 153 455 112 400 112Z" fill="url(#future-shape)"></path>
+
+  <rect x="369" y="350" width="62" height="12" rx="6" fill="#ffffff"></rect>
+  <rect x="376" y="371" width="48" height="10" rx="5" fill="#ffffff" opacity=".8"></rect>
+
+  <!-- Light rays -->
+  <g stroke="#55d3cf" stroke-width="7" stroke-linecap="round">
+    <path d="M400 65 V40"></path>
+    <path d="M285 105 L267 87"></path>
+    <path d="M515 105 L533 87"></path>
+    <path d="M250 220 H225"></path>
+    <path d="M550 220 H575"></path>
+  </g>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="175" cy="145" r="5"></circle>
+    <circle cx="625" cy="145" r="5"></circle>
+    <circle cx="205" cy="320" r="4"></circle>
+    <circle cx="595" cy="320" r="4"></circle>
+  </g>
+
+  <text x="400" y="425" text-anchor="middle" font-family="Arial" font-size="25" font-weight="bold" letter-spacing="4" fill="#ffffff">COMING SOON</text>
+</svg>
